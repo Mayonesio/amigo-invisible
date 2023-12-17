@@ -1,0 +1,195 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+body{
+    background-color: #0d0d0d ;
+    font-style: 'RubikLines';
+    
+
+}
+.main__container {
+    display: flex;
+    justify-content: center;
+    MARGIN-TOP: 12%;
+}
+
+.container {
+    width: 300px;
+    height: 430px;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 10px 20px #35030763;
+    font-family: sans-serif;
+    background: #f2f2f2;
+    pointer-events: none;
+  }
+  
+  .palette {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    pointer-events: auto;
+  }
+  
+  .palette:hover > #color-code {
+    opacity: 0;
+  }
+  
+  .color {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transform-origin: center;
+    transition: 0.3s ease-in-out;
+    box-sizing: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .color span {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0;
+    text-align: center;
+  }
+
+  .color span:hover{
+    opacity: 1;
+  }
+  
+  #color1 {
+    font-style: 'Rubik Lines', 'san serif';
+
+    background: #8DBF21;
+    rotate: 45deg;
+    translate: 212.13px 0;
+    outline: 0 solid #8DBF21;
+    z-index: 9;
+  }
+  
+  #color1:hover {
+    translate: 0 0;
+    rotate: 0deg;
+    z-index: 99;
+    outline: 20px solid #D90416;
+  }
+  
+  #color2 {
+    background: #d90416;
+    rotate: 45deg;
+    translate: 0 212.13px;
+    outline: 0 solid #d90416;
+    z-index: 9;
+  }
+  
+  #color2:hover {
+    translate: 0 0;
+    rotate: 0deg;
+    z-index: 99;
+    outline: 20px solid #89A65D;
+  }
+  
+  #color2 span {
+    color: #f2f2f2;
+  }
+  
+  #color3 {
+    background: #89A65D;
+    rotate: 45deg;
+    translate: -212.13px 0;
+    outline: 0 solid #89A65D;
+    z-index: 9;
+  }
+  
+  #color3:hover {
+    translate: 0 0;
+    rotate: 0deg;
+    z-index: 99;
+    outline: 20px solid #D90416;
+  }
+  
+  #color4 {
+    background: #8C031C;
+    rotate: 45deg;
+    translate: 0 -212.13px;
+    outline: 0 solid #8C031C;
+    z-index: 9;
+  }
+  
+  #color4:hover {
+    translate: 0 0;
+    rotate: 0deg;
+    z-index: 99;
+    outline: 20px solid #8C031C;
+  }
+  
+  #color-code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    translate: 130px 130px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 199;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #color-code-bg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    filter: blur(10px);
+  }
+  
+  #color-code-text {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .palette span{
+    text-align: center;
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 2em;
+  }
+  #color-code-text::after {
+    content: "v2";
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #1a1a1a;
+  }
+  
+  #footer {
+    height: 35%;
+    width: 100%;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    box-sizing: border-box;
+    color: #0d0d0d;
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 2em;
+    text-align: center;
+ }
+  
+  #footer svg {
+    scale: 0.75;
+  }
+  
+  #footer #bookmarks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: smaller;
+  }
